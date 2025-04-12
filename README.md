@@ -1,4 +1,4 @@
-# bitz-node-pc-vps
+# Bitz Node PC/VPS
 An Easy Guide to Run Bitz Node in PC/VPS using Ubuntu/WSL.
 
 **❤️❤️Follow our TG for More Early Alpha: https://telegram.me/cryptomythx**
