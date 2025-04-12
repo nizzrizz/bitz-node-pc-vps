@@ -102,3 +102,37 @@ ON/OFF:
 ```bash
 screen -r bitz
  ```
+
+# If Node Keep Crashing Cause of Heavy Traffic in The Network 🛜 
+
+Create Auto Script: 
+```bash
+nano auto-bitz.sh
+ ```
+
+Paste This & Save (Ctrl+X+Y and Enter) it will Auto Restart Node Whenever Gets Crashed 😇:
+```bash
+#!/bin/bash
+
+while true; do
+    echo "Starting bitz node..."
+    bitz collect
+    echo "bitz crashed. Restarting in 5 seconds..."
+    sleep 5
+done
+ ```
+
+Make it Executable:
+```bash
+chmod 777 auto-bitz.sh
+ ```
+
+Run With Auto Script (1st):
+```bash
+screen -S bitz
+ ```
+
+Run With Auto Script (2nd):
+```bash
+./auto-bitz.sh
+ ```
